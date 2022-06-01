@@ -6,7 +6,7 @@
         $sentences=$bd->prepare("select * from cliente inner join detalle_cliente_recarga on detalle_cliente_recarga.idcliente=cliente.id_cliente where idcliente=?");
         $sentences->execute([$codigo]);
         $persona=$sentences->fetch(PDO::FETCH_OBJ);
-        print_r($persona);
+  
        
      
        
